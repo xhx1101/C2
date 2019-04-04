@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="cn.edu.ncepu.sa.activemq.Reciever" x="394" y="8">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.Mul" x="84" y="313">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.edu.ncepu.sa.activemq.C2Component"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.C2Component" x="209" y="98">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="cn.edu.ncepu.sa.activemq.Reciever"
+            endpointName="reciever" kind="Simple"/>
+        <Association
+            destinationClassName="cn.edu.ncepu.sa.activemq.Sender"
+            endpointName="sender" kind="Simple"/>
+        <Communication destinationClassName="cn.edu.ncepu.sa.activemq.Reciever"/>
+        <Communication destinationClassName="cn.edu.ncepu.sa.activemq.Sender"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.Add" x="85" y="100">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.edu.ncepu.sa.activemq.C2Component"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.Sender" x="391" y="314">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.MainClass" x="-11" y="180">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="cn.edu.ncepu.sa.activemq.C2Component"/>
+    </Class>
+    <Class name="cn.edu.ncepu.sa.activemq.Sub" x="73" y="209">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.edu.ncepu.sa.activemq.C2Component"/>
+    </Class>
+</ClassDiagram>
